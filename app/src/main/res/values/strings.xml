@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">calculodepersonas</string>
+    <string name="titulo_resultado">Resultado</string>
+    <string name="btn_recalcular">Recalcular</string>
 </resources>

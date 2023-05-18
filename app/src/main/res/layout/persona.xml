@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
-    <ViewText
+    <TextView
         android:id="@+id/Nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:Text="Nombre"
-        android:TextSize="20dp"
-        >
-    </ViewText>
+        android:text="Nombre:"
+        android:textSize="25dp" />
 
     <EditText
         android:id="@+id/editNombre"
@@ -19,8 +18,107 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:ems="10"
-        android:hint="Correo:"
-        android:textSize="20dp"
-        android:inputType="textEmailAddress"/>
+        android:textSize="25dp" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/Edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edad:"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:textSize="25dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/DNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DNI:"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/Género"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Género:"
+        android:textSize="25dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RadioButton
+            android:id="@+id/hombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:textSize="25dp"/>
+
+        <RadioButton
+            android:id="@+id/mujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer"
+            android:textSize="25dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso:"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/Altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura:"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/botonCalcular"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="25dp"></TextView>
+
+
+</LinearLayout>
